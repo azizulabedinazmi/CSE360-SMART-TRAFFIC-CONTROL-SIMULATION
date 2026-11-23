@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/assets/banner.svg" alt="Smart Traffic Control Simulation banner" width="100%">
+</p>
+
 # 🚦 SMART TRAFFIC CONTROL SIMULATION
 
 ## 📋 Mini Project Overview

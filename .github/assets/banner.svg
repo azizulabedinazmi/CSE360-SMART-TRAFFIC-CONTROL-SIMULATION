@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <style>
+      .r{animation:r 6s steps(1) infinite}.y{animation:y 6s steps(1) infinite}.g{animation:g 6s steps(1) infinite}
+      @keyframes r{0%{opacity:1}50%{opacity:.15}}
+      @keyframes y{0%{opacity:.15}40%{opacity:1}50%{opacity:.15}90%{opacity:1}}
+      @keyframes g{0%{opacity:.15}50%{opacity:1}90%{opacity:.15}}
+      .car{animation:drive 5s linear infinite}.c2{animation-delay:-2.5s}
+      @keyframes drive{from{transform:translateX(-120px)}to{transform:translateX(1320px)}}
+      .carv{animation:down 4s linear infinite}@keyframes down{from{transform:translateY(-80px)}to{transform:translateY(400px)}}
+    </style>
+  </defs>
+  <rect width="1200" height="320" fill="#1f2937"/>
+  <!-- grass blocks -->
+  <rect x="0" y="0" width="830" height="110" fill="#14532d"/><rect x="970" y="0" width="230" height="110" fill="#14532d"/>
+  <rect x="0" y="230" width="830" height="90" fill="#14532d"/><rect x="970" y="230" width="230" height="90" fill="#14532d"/>
+  <!-- road markings -->
+  <path d="M0 170H830M970 170H1200" stroke="#facc15" stroke-width="4" stroke-dasharray="30 22"/>
+  <path d="M900 0V110M900 230V320" stroke="#facc15" stroke-width="4" stroke-dasharray="22 16"/>
+  <g fill="#f9fafb"><rect x="830" y="114" width="10" height="112"/><rect x="960" y="114" width="10" height="112"/>
+    <g opacity=".9"><rect x="846" y="114" width="10" height="112"/><rect x="866" y="114" width="10" height="112"/><rect x="886" y="114" width="10" height="112"/><rect x="906" y="114" width="10" height="112"/><rect x="926" y="114" width="10" height="112"/><rect x="944" y="114" width="10" height="112"/></g></g>
+  <!-- cars -->
+  <g class="car"><rect x="0" y="182" width="70" height="32" rx="8" fill="#38bdf8"/><rect x="40" y="186" width="20" height="24" rx="3" fill="#0c4a6e"/></g>
+  <g class="car c2"><rect x="0" y="182" width="90" height="34" rx="8" fill="#f97316"/><rect x="60" y="186" width="20" height="26" rx="3" fill="#7c2d12"/></g>
+  <g class="carv"><rect x="912" y="0" width="34" height="64" rx="8" fill="#ef4444"/><rect x="916" y="40" width="26" height="16" rx="3" fill="#450a0a"/></g>
+  <!-- traffic light -->
+  <g transform="translate(1040 18)">
+    <rect x="16" y="96" width="10" height="90" fill="#374151"/>
+    <rect width="42" height="104" rx="10" fill="#111827" stroke="#4b5563"/>
+    <circle class="r" cx="21" cy="20" r="11" fill="#ef4444"/><circle class="y" cx="21" cy="52" r="11" fill="#facc15"/><circle class="g" cx="21" cy="84" r="11" fill="#22c55e"/>
+  </g>
+  <!-- title plate (road sign) -->
+  <g transform="translate(60 26)">
+    <rect width="640" height="74" rx="10" fill="#15803d" stroke="#f0fdf4" stroke-width="4"/>
+    <text x="28" y="50" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="800" fill="#f0fdf4" letter-spacing="1">SMART TRAFFIC CONTROL</text>
+  </g>
+  <g transform="translate(60 248)">
+    <rect width="560" height="52" rx="8" fill="#facc15"/>
+    <text x="24" y="34" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#1f2937">ADAPTIVE TIMING · C++ / SFML · CSE360</text>
+  </g>
+</svg>
